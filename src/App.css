@@ -1,0 +1,180 @@
+/** Reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  font-family: system-ui;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: inline-block;
+  object-fit: contain;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  font-family: inherit;
+}
+
+input {
+  text-align: left;
+  line-height: 1.3;
+  padding: 5px 0 5px 8px;
+  background-color: #f9fafc;
+  border: 1px solid #a9a9a9;
+  border-radius: 2px;
+  font-size: .75rem;
+}
+
+button {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform .5s;
+}
+
+body {
+  background-color: #ffff;
+  color: #222;
+
+}
+
+/* APP */
+
+.app__header {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+
+.header__btn {
+  display: flex;
+  column-gap: 10px;
+}
+
+.header__btn button:first-child {
+  background-color: #55885d;
+  color: #e9e9e9;
+  padding-left: 30px;
+  border-radius: 2px;
+
+}
+
+.header__btn button:last-child {
+  background-color: #555A88;
+  color: #e9e9e9;
+  padding-left: 30px;
+  border-radius: 2px;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 5px;
+}
+
+.app__title {
+  font-size: 2rem;
+}
+
+.title__span {
+  color: #d85d5d;
+  font-size: 2rem;
+}
+
+.title__txt {
+  font-size: 1.5rem;
+  color: #a9a9a9;
+}
+
+.btn__dltAll {
+  background-color: #d85d5d;
+  color: #fff;
+}
+
+.app__container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.8s ease-out;
+}
+
+.loading__gif {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.logo {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.logo:hover {
+  background-color: #a9a9a9;
+  border: 2px solid #fff;
+}
+
+@media (min-width: 800px) {
+  body {
+    padding: 40px;
+  }
+
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+
+}
