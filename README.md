@@ -5,6 +5,8 @@
 El proyecto es un aplicativo web que nos permita interactuar con una API de Users, a través de, todos los métodos http, bajo la lógica de C.R.U.D. (Create, Read, Update y Delete). 
 
 Permite Crear usuarios manualmente, y usando un boton obtener información aleatoria para crear usuarios, permite borrarlos, permite editarlos, y la información relevante es renderizada; tambien contiene mensajes de información sobre las diferentes acciones que toma el usuario interactuando con la APP.
+
+
 ✌ 
 ![HTML](https://img.shields.io/badge/lenguaje-html-red?logo.svg) 
 ![CSS](https://img.shields.io/badge/lenguaje-css-blue?logo=html)
